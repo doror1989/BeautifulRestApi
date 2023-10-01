@@ -7,13 +7,14 @@ class test:
         def wrapper(*args, **kwargs):
             return True
 
-    @app.route("/protected_route/:id")
+    
     @is_authenticated
+    @app.route("/protected_route/:id")
     def protected_route(id):
         return jsonify({"message": f"Hello, {user.username}! This is a protected route."})
 
-    @app.route("/protected_route_2/:email")
     @is_authenticated
+    @app.route("/protected_route_2/:email")
     def protected_route(email):
         return jsonify({"message": f"Hello, {user.username}! This is a protected route."})
 
