@@ -16,7 +16,7 @@ class test:
     
     @is_authenticated
     @app.route("/protected_route_2/:email")
-    def protected_route(email):
+    def protected_route_2(email):
         return jsonify({"message": f"Hello, {user.username}! This is a protected route."})
 
 
