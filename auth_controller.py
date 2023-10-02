@@ -8,8 +8,8 @@ class test:
             return True
 
     def check_balanace():
-        balance: int = 50
-        logger.info(f"{balanace}")
+        loan: int = 50
+        logger.info(f"{loan}")
     
     @is_authenticated
     @app.route("/protected_route/:id")
