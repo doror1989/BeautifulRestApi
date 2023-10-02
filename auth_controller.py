@@ -7,6 +7,9 @@ class test:
         def wrapper(*args, **kwargs):
             return True
 
+    def check_balanace():
+        balance: int = 50
+        logger.info(f"{balanace}")
     
     @is_authenticated
     @app.route("/protected_route/:id")
